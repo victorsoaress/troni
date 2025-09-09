@@ -9,3 +9,5 @@ db.sqlite3
 .venv/
 venv/
 .env
+docker-compose.yml
+chatbot

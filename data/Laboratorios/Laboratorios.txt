@@ -1,0 +1,19 @@
+O curso de Engenharia Mecatrônica da UFSJ utiliza 15 laboratórios para a realização de aulas das unidades curriculares previstas no Projeto Pedagógico do Curso e para o desenvolvimento de projetos acadêmicos, como pesquisa e extensão universitária. Esses laboratórios são:
+
+1. **Laboratório de Processos de Fabricação** sala - (NIPEM 101): Atende as unidades curriculares de Processos de Fabricação 1, Materiais para Engenharia, e Tópicos Especiais em Processos de Fabricação.
+2. **Laboratório de Máquinas e Acionamentos Elétricos** sala - (NIPEM-102): Atende as unidades curriculares de Máquinas e Acionamentos Elétricos, e Tópicos Especiais em Máquinas e Acionamentos Elétricos.
+3. **Laboratório de Projetos Mecânicos** sala - (NIPEM-103): Atende as unidades curriculares de Sistemas Hidráulicos e Pneumáticos, Mecanismos e Elementos de Máquinas, e Tópicos Especiais em Projetos Mecânicos.
+4. **Laboratório de Robótica** sala - (101-B4): Atende as unidades curriculares de Introdução à Robótica, e Tópicos Especiais em Robótica.
+5. **Laboratório de Automação e Controle** sala - (103-B4): Atende as unidades curriculares de Informática Industrial, Sistemas Supervisórios, Redes Industriais, e Tópicos Especiais em Automação e Controle.
+6. **Laboratório Computacional 1** sala - (104-B4): Atende as unidades curriculares de Algoritmos e Estruturas de Dados I e II.
+7. **Laboratório de Eletrônica Analógica e Digital - B** sala - (111-B4): Atende as unidades curriculares de Sistemas Digitais, Eletrônica I, Eletrônica II, Microprocessadores, Sistemas Embarcados, e Tópicos Especiais em Eletrônica.
+8. **Laboratório de Eletrônica Analógica e Digital - A** sala - (101-B5): Atende as unidades curriculares de Sistemas Digitais, Eletrônica I, Eletrônica II, Microprocessadores, Sistemas Embarcados, e Tópicos Especiais em Eletrônica.
+9. **Laboratório de Circuitos Elétricos** sala - (103-B5): Atende as unidades curriculares de Circuitos Elétricos I, e Tópicos Especiais em Circuitos Elétricos.
+10. **Laboratório Computacional 2** sala - (106-B5): Atende as unidades curriculares de Projeto e Computação Gráfica I e II.
+11. **Laboratório Computacional 3** sala - (108-B5): Atende as unidades curriculares de Mecânica Computacional, e Tópicos Especiais em Mecânica Computacional.
+12. **Laboratório Computacional 4** sala - (111-B5): Atende as unidades curriculares de Programação Orientada a Objetos, e Cálculo Numérico.
+13. **Laboratório de Física 1** sala - (106-B6): Atende as unidades curriculares de Fenômenos Mecânicos; Fenômenos Térmicos, Oscilatórios e Fluidos; e Tópicos Especiais em Física.
+14. **Laboratório de Física 2** sala - (108-B6): Atende as unidades curriculares de Fenômenos Eletromagnéticos, e Tópicos Especiais em Física.
+15. **Laboratório de Química Geral** sala - (110-B6): Atende as unidades curriculares de Química Geral Experimental, e Tópicos Especiais em Química.
+
+Esses laboratórios são essenciais para a formação prática dos alunos e para a integração das diversas áreas do conhecimento que compõem o curso de Engenharia Mecatrônica.

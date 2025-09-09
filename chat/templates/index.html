@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troni</title>
+  <!-- CSS do app (estruture em chat/static/css/index.css) -->
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+  <header class="cabecalho container">
+    <img src="{% static 'img/MecaChatLogo.png' %}" class="img_logo" alt="Logo MecaChat">
+    <div class="cabecalho__acoes">
+      <!-- ações do cabeçalho, se houver -->
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="chat container" id="chat">
+      <p class="chat__bolha chat__bolha--bot">
+        Olá! Eu sou o Troni, um assistente virtual criado para auxiliar estudantes de Engenharia Mecatrônica da UFSJ! Estou em desenvolvimento e em constante melhoria, portanto, posso errar em algumas respostas fornecidas. Para conferir as informações aqui passadas, sempre retornarei as fontes e links de consulta!<br>
+        Todas as informações utilizadas pelo modelo de IA para pesquisa são públicas e podem ser encontradas em:
+        <a href="https://ufsj.edu.br/" target="_blank" rel="noopener noreferrer">https://ufsj.edu.br/</a>.
+      </p>
+    </section>
+
+    <section class="entrada container">
+      <div class="entrada__container">
+        <input type="text" class="entrada__input" placeholder="Tire sua dúvida" id="input" aria-label="Campo de mensagem">
+        <button aria-label="Enviar" id="botao-enviar" class="botao__enviar" type="button">
+          <img src="{% static 'img/icone-enviar.svg' %}" class="icone icone--enviar-mensagem" alt="Enviar">
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- JS do app (estruture em chat/static/js/index.js) -->
+  <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
