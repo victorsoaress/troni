@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const resp = await fetch("/api/chat/rag", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ msg: mensagem }), // opcional: {category: "ppc"}
+        body: JSON.stringify({ user_query: mensagem }), // opcional: {category: "ppc"}
         signal: ctrl.signal
       });
 

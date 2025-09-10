@@ -73,9 +73,9 @@ class ChatRagAPIView(APIView):
 
     def post(self, request):
         pipeline = SecureLLMPipeline()
-        user_query = request.data.get("msg")
+        user_query = request.data.get("user_query")
         if not user_query:
-            return Response({"error": "Campo 'msg' é obrigatório."}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"error": "Campo 'user_query' é obrigatório."}, status=status.HTTP_400_BAD_REQUEST)
 
         category = self.get_category(user_query, pipeline)
         if category == "Não posso responder à essa questão por motivos de segurança.":
@@ -85,7 +85,7 @@ class ChatRagAPIView(APIView):
             }, status=status.HTTP_200_OK)
         
         if category not in CATEGORIES:
-            category = "info_gerais"
+            category = "ppc"
 
         context, sources = self.get_rag_context(user_query, category)
 
