@@ -1,0 +1,14 @@
+{
+    "horarios": ["./data/Horarios/Horario_Mecatronica_2025-1-1.pdf"],
+    "info_gerais": ["./data/Informacoes Gerais/Informacoes Gerais.txt"],
+    "laboratorios": ["./data/Laboratorios/Laboratorios.txt"],
+    "colegiado": ["./data/Colegiado/Colegiado.txt", "./data/Colegiado/Res009Consu2019_Regimento_Colegiado_Engenharia_Mecatrnica.pdf"],
+    "nde": ["./data/NDE/NDE.txt"],
+    "empresa_junior": ["./data/Empresa Junior/Tristate.txt"],
+    "inscricao_periodica": ["./data/Inscricao Periodica/Inscricao Periodica.txt"],
+    "premios": ["./data/Premios/Premios.txt"],
+    "professores": ["./data/Professores/Professores.txt"],
+    "requerimento_eletronico": ["./data/Requerimento Eletronico/Requerimento Eletronico.txt"],
+    "atividade_complementar": ["./data/Atividade Complementar/Atividades Complementares.txt", "./data/Atividade Complementar/TABELA DE HORAS COMPLEMENTARES.pdf"],
+    "ppc": ["./data/Planos de Ensino/PPC_Mecatronica.pdf"]
+}

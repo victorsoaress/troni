@@ -1,0 +1,59 @@
+Abaixo está a lista de professores do curso de Engenharia Mecatrônica da UFSJ, juntamente com as respectivas salas e e-mails de contato:
+
+1. **Alexandre Cândido Moreira**
+   - Sala: 206.3
+   - E-mail: amoreira@ufsj.edu.br
+
+2. **Cláudio Alexandre Pinto Tavares**
+   - Sala: 210.3
+   - E-mail: claudiot@ufsj.edu.br
+
+3. **Diego Raimundi Corradi**
+   - Sala: 209.3
+   - E-mail: diego.corradi@ufsj.edu.br
+
+4. **Edgar Campos Furtado**
+   - Sala: 201.3
+   - E-mail: edgar@ufsj.edu.br
+
+5. **Guilherme Gomes da Silva**
+   - Sala: 201.3
+   - E-mail: guilhermegomes@ufsj.edu.br
+
+6. **Leonardo Adolpho Rodrigues da Silva**
+   - Sala: NIPEM Sala 3
+   - E-mail: leonardo@ufsj.edu.br
+
+7. **Leonardo Guimarães Fonseca**
+   - Sala: 204.3
+   - E-mail: leofonseca@ufsj.edu.br
+
+8. **Marco Aurélio Seluque Fregonezi**
+   - Sala: 220.2
+   - E-mail: fregonezi@ufsj.edu.br
+
+9. **Rina Mariane Alves Dutra**
+   - Sala: 205.3
+   - E-mail: rina@ufsj.edu.br
+
+10. **Tarsis Prado Barbosa**
+    - Sala: 209.3
+    - E-mail: tarsisbarbosa@ufsj.edu.br
+
+11. **Adriano Silva Vale Cardoso**
+    - Sala: 112.2
+    - E-mail: adrianosvc@ufsj.edu.br
+
+12. **Cristiano Grijó Pitangui**
+    - Sala: 107.2
+    - E-mail: pitangui.cristiano@ufsj.edu.br
+
+13. **Marcos Vinícius Lopes Pereira**
+    - Sala: 114.2
+    - E-mail: marcos.vinicius@ufsj.edu.br
+
+14. **Michel Carlo Rodrigues Leles**
+    - Sala: 112.2
+    - E-mail: mleles@ufsj.edu.br
+
+Essa lista pode ser útil para alunos que precisem entrar em contato com seus professores ou para outros fins acadêmicos.

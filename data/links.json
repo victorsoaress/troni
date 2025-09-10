@@ -1,0 +1,77 @@
+[
+    {
+        "nome":"laboratorios",
+        "descricao":"",
+        "link":"https://ufsj.edu.br/cemec/laboratorios.php"
+    },
+    {
+        "nome":"informacoes_gerais",
+        "descricao":"",
+        "link": "https://ufsj.edu.br/cemec/index.php, https://ufsj.edu.br/cemec/o_curso.php"
+    },
+    {
+        "nome":"colegiado",
+        "descricao":"",
+        "link":"https://ufsj.edu.br/cemec/colegiado.php"
+    },
+    {
+        "nome":"nde",
+        "descricao":"",
+        "link":"https://ufsj.edu.br/cemec/nde.php"
+    },
+    {
+        "nome":"estagios",
+        "descricao":"",
+        "link":"https://ufsj.edu.br/cemec/estagios.php"
+    },
+    {
+        "nome":"atividade complementar",
+        "descricao":"",
+        "link":"https://ufsj.edu.br/cemec/atividade_complementar.php, https://ufsj.edu.br/portal2-repositorio/File/cemec/ATIVIDADES%20COMPLEMENTARES/REQ-AC-01-R01(1).pdf, https://ufsj.edu.br/portal2-repositorio/File/cemec/ATIVIDADES%20COMPLEMENTARES/TAB-AC-EM-R00.pdf"
+    },
+    {
+        "nome":"tcc",
+        "descricao":"",
+        "link":"https://ufsj.edu.br/cemec/tcc.php"
+    },
+    {
+        "nome":"grade horaria",
+        "descricao":"",
+        "link":"https://ufsj.edu.br/cemec/grade_horaria.php"
+    },
+    {
+        "nome":"planos de ensino",
+        "descricao":"",
+        "link":"https://ufsj.edu.br/cemec/planos_de_ensino.php"
+    },
+    {
+        "nome":"inscricao periodica",
+        "descricao":"",
+        "link":"https://ufsj.edu.br/cemec/inscricao_periodica.php"
+    },
+    {
+        "nome":"editais",
+        "descricao":"",
+        "link":"https://ufsj.edu.br/cemec/editais.php"
+    },
+    {
+        "nome":"empresa junior",
+        "descricao":"",
+        "link":"https://ufsj.edu.br/cemec/empresa_jr.php"
+    },
+    {
+        "nome":"premios",
+        "descricao":"",
+        "link":"https://ufsj.edu.br/cemec/premios.php"
+    },
+    {
+        "nome":"professores",
+        "descricao":"",
+        "link":"https://www.ufsj.edu.br/cap/professores_e_tecnicos.php"
+    },
+    {
+        "nome":"requerimento eletronico",
+        "descricao":"",
+        "link":"https://ufsj.edu.br/cemec/requerimento_eletronico.php, "
+    }
+]
