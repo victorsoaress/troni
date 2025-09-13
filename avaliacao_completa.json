@@ -1,0 +1,312 @@
+{
+  "resultados_detalhados": [
+    {
+      "id": 101,
+      "pergunta": "Quais são os critérios para receber o Prêmio de Mérito Acadêmico?",
+      "resposta_esperada": "Para ser elegível ao Prêmio de Mérito Acadêmico, o discente deve atender aos seguintes critérios:\n                    1. **Coeficiente de Rendimento (CR) igual ou superior a 8,0**, conforme o extrato escolar fornecido pela UFSJ/Dicon;\n                    2. **Integralização de, no mínimo, 80% da carga horária total** do curso na UFSJ;\n                    3. **Cumprimento de todos os requisitos para colação de grau**.",
+      "resposta_pura": "Não tenho informações suficientes para responder com precisão.",
+      "resposta_rag": "Para ser elegível ao Prêmio de Mérito Acadêmico, o discente deve atender aos seguintes critérios:\n\n1. **Coeficiente de Rendimento (CR) igual ou superior a 8,0**, conforme o extrato escolar fornecido pela UFSJ/Dicon;\n2. **Integralização de, no mínimo, 80% da carga horária total** do curso na UFSJ;\n3. **Cumprimento de todos os requisitos para colação de grau**.",
+      "fontes": [
+        "Premios.txt"
+      ],
+      "metrics_pura": {
+        "exact_match": false,
+        "semantic_similarity": 0.20117524941478454,
+        "rougeL": 0.07692307692307691,
+        "length": 8,
+        "fontes_ok": false,
+        "hallucination": true
+      },
+      "metrics_rag": {
+        "exact_match": false,
+        "semantic_similarity": 0.98836921015042,
+        "rougeL": 1.0,
+        "length": 56,
+        "fontes_ok": true,
+        "hallucination": false
+      }
+    },
+    {
+      "id": 102,
+      "pergunta": "Quais são as principais áreas de atuação da Tristate Consultoria?",
+      "resposta_esperada": "As principais áreas de atuação da Tristate incluem software/android/web, automação industrial, automação residencial (Domótica), modelagem computacional e manufatura 3D.",
+      "resposta_pura": "Não tenho informações suficientes para responder com precisão.",
+      "resposta_rag": "As principais áreas de atuação da Tristate Consultoria incluem software/android/web, automação industrial, automação residencial (Domótica), modelagem computacional e manufatura 3D.",
+      "fontes": [
+        "Tristate.txt",
+        "Informacoes Gerais.txt"
+      ],
+      "metrics_pura": {
+        "exact_match": false,
+        "semantic_similarity": 0.24613674939701083,
+        "rougeL": 0.1111111111111111,
+        "length": 8,
+        "fontes_ok": false,
+        "hallucination": true
+      },
+      "metrics_rag": {
+        "exact_match": false,
+        "semantic_similarity": 0.9589102800124433,
+        "rougeL": 0.9803921568627451,
+        "length": 20,
+        "fontes_ok": true,
+        "hallucination": false
+      }
+    },
+    {
+      "id": 103,
+      "pergunta": "Quais são as três etapas da inscrição periódica e quando ocorre a solicitação de quebra de pré‑requisito/extrapolação de carga?",
+      "resposta_esperada": "As três etapas da inscrição periódica são a Matrícula, realizada de 30 de julho a 1º de agosto de 2025 com resultado divulgado em 6 de agosto de 2025; a Rematrícula, que ocorre de 8 a 12 de agosto de 2025 com resultado em 18 de agosto de 2025; e a Matrícula Extraordinária, que será de 19 a 27 de agosto de 2025 e é destinada à ocupação de vagas remanescentes. A solicitação de quebra de pré-requisito ou extrapolação de carga horária deve ser feita por meio de formulário online, acessível apenas com o e-mail institucional, sendo obrigatória a tentativa prévia de matrícula no SIGAA com comprovação anexada. Esses pedidos só são analisados se o aluno tiver, no mínimo, 3000 horas integralizadas ou necessitar cursar duas disciplinas dependentes para concluir o curso, e a prioridade é dada, primeiro, ao discente com maior carga horária integralizada e, em seguida, ao que possui maior índice de rendimento no SIGAA.",
+      "resposta_pura": "As três etapas da inscrição periódica no curso de Engenharia Mecatrônica da UFSJ são:\n\n1. **Solicitação de Inscrição**: Os alunos devem solicitar a inscrição nas disciplinas desejadas para o período letivo.\n2. **Análise de Inscrição**: A coordenação do curso analisa as solicitações, considerando os pré-requisitos e a carga horária.\n3. **Confirmação de Inscrição**: Após a análise, os alunos recebem a confirmação de suas inscrições nas disciplinas.\n\nA solicitação de quebra de pré-requisito ou extrapolação de carga deve ser feita durante a etapa de solicitação de inscrição, geralmente no mesmo período em que os alunos realizam suas inscrições nas disciplinas. É importante verificar o calendário acadêmico específico para datas exatas e procedimentos.",
+      "resposta_rag": "As três etapas da inscrição periódica são:\n\n1. **Matrícula**: de 30 de julho a 1º de agosto de 2025, com resultado divulgado em 6 de agosto de 2025.\n2. **Rematrícula**: de 8 a 12 de agosto de 2025, com resultado em 18 de agosto de 2025.\n3. **Matrícula Extraordinária**: de 19 a 27 de agosto de 2025, destinada à ocupação de vagas remanescentes.\n\nA solicitação de quebra de pré-requisito ou extrapolação de carga horária deve ser feita preenchendo um formulário online, disponível apenas com o e-mail institucional, e é obrigatório tentar a matrícula no SIGAA antes de abrir a solicitação.",
+      "fontes": [
+        "Inscricao Periodica.txt"
+      ],
+      "metrics_pura": {
+        "exact_match": false,
+        "semantic_similarity": 0.681531956255973,
+        "rougeL": 0.29559748427672955,
+        "length": 111,
+        "fontes_ok": false,
+        "hallucination": false
+      },
+      "metrics_rag": {
+        "exact_match": false,
+        "semantic_similarity": 0.952423890646768,
+        "rougeL": 0.7006802721088434,
+        "length": 100,
+        "fontes_ok": true,
+        "hallucination": false
+      }
+    },
+    {
+      "id": 104,
+      "pergunta": "Quais modalidades podem ser abertas no Requerimento Eletrônico do curso?",
+      "resposta_esperada": "As modalidades que podem ser abertas no Requerimento Eletrônico são: Abono de Faltas, Apólice de Seguro - somente para estágio curricular obrigatório, Atestado de Frequência, Atividades Complementares, Carta de Apresentação para Estágio, Certificado de Monitoria, Dispensa de Disciplina (a solicitação de Equivalência/Aproveitamento de Estudos é realizada em outro item), Equivalência Interna entre Unidades Curriculares e/ou Aproveitamento de Estudo, Inscrição em Estágio Curricular Obrigatório, Inscrição em Trabalho de Conclusão de Curso (TCC I e/ou TCC II), Inscrição em TCIC I e/ou TCIC II - Trabalho de Contextualização e Integração Curricular (apenas alunos ingressantes em 2017.1), Prorrogação do Prazo de Integralização do Curso, Segunda Chamada de Avaliação, Tratamento Especial de Estudos, Recurso contra Decisão do Colegiado de Curso, Revisão de Avaliação e de Nota Final, OUTROS - caso não esteja elencado nos itens relacionados acima.",
+      "resposta_pura": "No Requerimento Eletrônico do curso de Engenharia Mecatrônica da UFSJ, as modalidades que podem ser abertas incluem, geralmente, solicitações como: \n\n1. Solicitação de matrícula em disciplinas.\n2. Pedido de aproveitamento de estudos.\n3. Solicitação de trancamento de matrícula.\n4. Requerimento de revisão de notas.\n5. Pedido de mudança de turno.\n\nPara informações mais detalhadas e atualizadas, é recomendável consultar o site oficial da UFSJ ou a coordenação do curso.",
+      "resposta_rag": "As modalidades que podem ser abertas no Requerimento Eletrônico do curso de Engenharia Mecatrônica são:\n\n- Abono de Faltas\n- Apólice de Seguro - somente para estágio curricular obrigatório\n- Atestado de Frequência\n- Atividades Complementares\n- Carta de Apresentação para Estágio\n- Certificado de Monitoria\n- Dispensa de Disciplina\n- Equivalência Interna entre Unidades Curriculares e/ou Aproveitamento de Estudo\n- Inscrição em Estágio Curricular Obrigatório\n- Inscrição em Trabalho de Conclusão de Curso (TCC I e/ou TCC II)\n- Inscrição em TCIC I e/ou TCIC II\n- Trabalho de Contextualização e Integração Curricular (apenas alunos ingressantes em 2017.1)\n- Prorrogação do Prazo de Integralização do Curso\n- Segunda Chamada de Avaliação\n- Tratamento Especial de Estudos\n- Recurso contra Decisão do Colegiado de Curso\n- Revisão de Avaliação e de Nota Final\n- OUTROS - caso não esteja elencado nos itens relacionados acima.",
+      "fontes": [
+        "Requerimento Eletronico.txt"
+      ],
+      "metrics_pura": {
+        "exact_match": false,
+        "semantic_similarity": 0.7472386176733912,
+        "rougeL": 0.2,
+        "length": 69,
+        "fontes_ok": false,
+        "hallucination": false
+      },
+      "metrics_rag": {
+        "exact_match": false,
+        "semantic_similarity": 0.8835639397845332,
+        "rougeL": 0.939297124600639,
+        "length": 144,
+        "fontes_ok": true,
+        "hallucination": false
+      }
+    },
+    {
+      "id": 105,
+      "pergunta": "Quais são os passos principais para solicitar a contagem de horas de Atividades Complementares?",
+      "resposta_esperada": "Os passos para solicitar a contagem de horas complementares são: Preencher o formulário online disponível na aba Requerimento Eletrônico; Preencher e assinar o formulário de Atividades Complementares: AC-01. Anexar o formulário AC-01 e comprovantes das atividades por meio do envio de arquivo único em PDF** | Crie um arquivo único em PDF que contenha o formulário AC-01 e os comprovantes das atividades, na sequência em que foram listados no formulário. Envie esse arquivo único para que as atividades sejam validadas no sistema. **AS ATIVIDADES SERÃO VALIDADAS NO SISTEMA SOMENTE APÓS REALIZAÇÃO DOS PROCEDIMENTOS DESCRITOS",
+      "resposta_pura": "Para solicitar a contagem de horas de Atividades Complementares no curso de Engenharia Mecatrônica da UFSJ, os passos principais geralmente incluem:\n\n1. **Verificação da Normativa**: Consulte o regulamento do curso sobre Atividades Complementares para entender os tipos de atividades que podem ser contabilizadas e os critérios necessários.\n\n2. **Reunião de Documentação**: Junte toda a documentação que comprove a realização das atividades que você deseja contabilizar, como certificados, declarações ou outros comprovantes.\n\n3. **Preenchimento do Formulário**: Preencha o formulário específico para solicitação de contagem de horas de Atividades Complementares, que pode ser encontrado no site da UFSJ ou na coordenação do curso.\n\n4. **Entrega da Solicitação**: Apresente a documentação e o formulário preenchido na coordenação do curso ou no setor responsável pela análise das Atividades Complementares.\n\n5. **Acompanhamento**: Após a entrega, é importante acompanhar o andamento da solicitação e verificar se há necessidade de informações adicionais.\n\nRecomendo que você consulte a coordenação do curso ou o site oficial da UFSJ para obter informações detalhadas e atualizadas sobre o processo.",
+      "resposta_rag": "Os passos principais para solicitar a contagem de horas de Atividades Complementares são:\n\n1. **Preencher o formulário online disponível na aba Requerimento Eletrônico**: Acesse e complete o formulário de Atividades Complementares.\n2. **Preencher e assinar o formulário de Atividades Complementares: AC-01**: Preencha o formulário AC-01 com as informações detalhadas das atividades realizadas e assine-o.\n3. **Anexar o formulário AC-01 e comprovantes das atividades por meio do envio de arquivo único em PDF**: Crie um arquivo único em PDF que contenha o formulário AC-01 e os comprovantes das atividades, e envie esse arquivo para validação.\n\n\"As atividades serão validadas no sistema somente após realização dos procedimentos descritos.\"",
+      "fontes": [
+        "Atividades Complementares.txt",
+        "TABELA DE HORAS COMPLEMENTARES.pdf"
+      ],
+      "metrics_pura": {
+        "exact_match": false,
+        "semantic_similarity": 0.7225751298445897,
+        "rougeL": 0.19333333333333333,
+        "length": 168,
+        "fontes_ok": false,
+        "hallucination": false
+      },
+      "metrics_rag": {
+        "exact_match": false,
+        "semantic_similarity": 0.9454685596784316,
+        "rougeL": 0.7725321888412018,
+        "length": 106,
+        "fontes_ok": true,
+        "hallucination": false
+      }
+    },
+    {
+      "id": 201,
+      "pergunta": "Segundo a Resolução UFSJ/Consu nº 009/2019, como é composta a estrutura do Colegiado do Curso de Engenharia Mecatrônica?",
+      "resposta_esperada": "O Colegiado do Curso é composto:\n                    I – pelo(a) coordenador(a) do Curso, que o preside;\n                    II – pelo(a) vice-coordenador(a) do Curso;\n                    III – por 3 (três) membros conselheiros docentes do Curso;\n                    IV – por 1 (um) discente do curso, indicado pelo órgão representativo e, na\n                    falta desse órgão, eleito pelos respectivos pares.",
+      "resposta_pura": "A estrutura do Colegiado do Curso de Engenharia Mecatrônica, conforme a Resolução UFSJ/Consu nº 009/2019, é composta por:\n\n1. **Docentes**: Representantes do corpo docente do curso.\n2. **Discentes**: Representantes dos alunos do curso.\n3. **Técnicos Administrativos**: Representantes da equipe técnica e administrativa, se houver.\n\nO número exato de representantes e a forma de escolha podem variar, mas essa é a composição básica prevista na resolução. Para detalhes específicos, recomenda-se consultar a resolução diretamente ou o regulamento do curso.",
+      "resposta_rag": "A estrutura do Colegiado do Curso de Engenharia Mecatrônica é composta por:\n\nI – pelo(a) coordenador(a) do Curso, que o preside;  \nII – pelo(a) vice-coordenador(a) do Curso;  \nIII – por 3 (três) membros conselheiros docentes do Curso;  \nIV – por 1 (um) discente do curso, indicado pelo órgão representativo e, na falta desse órgão, eleito pelos respectivos pares.  \n\nOs docentes referidos no inciso III devem ser docentes do Curso no semestre atual ou que o foram no semestre anterior.",
+      "fontes": [
+        "Colegiado.txt",
+        "Res009Consu2019_Regimento_Colegiado_Engenharia_Mecatrnica.pdf"
+      ],
+      "metrics_pura": {
+        "exact_match": false,
+        "semantic_similarity": 0.6893566537221449,
+        "rougeL": 0.2222222222222222,
+        "length": 78,
+        "fontes_ok": false,
+        "hallucination": false
+      },
+      "metrics_rag": {
+        "exact_match": false,
+        "semantic_similarity": 0.7841857043348304,
+        "rougeL": 0.7681159420289854,
+        "length": 79,
+        "fontes_ok": true,
+        "hallucination": false
+      }
+    },
+    {
+      "id": 202,
+      "pergunta": "Quais são os membros do colegiado?",
+      "resposta_esperada": "Atualmente, o Colegiado é composto pelos seguintes membros: Diego Raimondi Corradi, que ocupa o cargo de Coordenador, com vigência de mandato de 17/11/2023 a 16/11/2025;  Filipe Augusto Santos Rocha, que é o Vice-Coordenador, com mandato de 05/05/2025 a 05/05/2027; Wesley Josias de Paula, que é o 1º Membro Docente, com mandato de 04/06/2025 a 03/06/2027; Leonardo Guimarães Fonseca, que ocupa o cargo de 2º Membro Docente, com mandato de 25/07/2024 a 24/07/2026; Rone Ilídio da Silva, que é o 3º Membro Docente, com mandato de 22/03/2025 a 21/03/2027; e Victor de Almeida Andrade, que é o Membro Discente, com mandato de 04/12/2024 a 03/12/2025.",
+      "resposta_pura": "Não tenho informações suficientes para responder com precisão. Recomendo consultar o site oficial da UFSJ ou entrar em contato diretamente com a coordenação do curso de Engenharia Mecatrônica para obter informações atualizadas sobre os membros do colegiado.",
+      "resposta_rag": "Os membros do colegiado do Curso de Engenharia Mecatrônica são:\n\n1. Diego Raimondi Corradi - Coordenador (mandato de 17/11/2023 a 16/11/2025)\n2. Filipe Augusto Santos Rocha - Vice-Coordenador (mandato de 05/05/2025 a 05/05/2027)\n3. Wesley Josias de Paula - 1º Membro Docente (mandato de 04/06/2025 a 03/06/2027)\n4. Leonardo Guimarães Fonseca - 2º Membro Docente (mandato de 25/07/2024 a 24/07/2026)\n5. Rone Ilídio da Silva - 3º Membro Docente (mandato de 22/03/2025 a 21/03/2027)\n6. Victor de Almeida Andrade - Membro Discente (mandato de 04/12/2024 a 03/12/2025)",
+      "fontes": [
+        "Colegiado.txt",
+        "Res009Consu2019_Regimento_Colegiado_Engenharia_Mecatrnica.pdf"
+      ],
+      "metrics_pura": {
+        "exact_match": false,
+        "semantic_similarity": 0.5630517986148301,
+        "rougeL": 0.10588235294117646,
+        "length": 37,
+        "fontes_ok": false,
+        "hallucination": false
+      },
+      "metrics_rag": {
+        "exact_match": false,
+        "semantic_similarity": 0.7924314804287529,
+        "rougeL": 0.7848101265822786,
+        "length": 87,
+        "fontes_ok": true,
+        "hallucination": false
+      }
+    },
+    {
+      "id": 203,
+      "pergunta": "De acordo com o PPC do curso, qual é o objetivo geral da Engenharia Mecatrônica na UFSJ?",
+      "resposta_esperada": "O curso de graduação em Engenharia Mecatrônica da Universidade Federal  de São João del-Rei, Campus Alto Paraopeba, tem como objetivo geral formar engenheiros com sólido preparo científico e tecnológico na área de Elétrica, Mecânica, Computação,Controle e Automação. Os egressos devem ter capacidade de absorver e desenvolver novas tecnologias",
+      "resposta_pura": "O objetivo geral do curso de Engenharia Mecatrônica da UFSJ é formar profissionais capacitados para atuar na concepção, desenvolvimento e manutenção de sistemas mecatrônicos, integrando conhecimentos de mecânica, eletrônica, computação e controle. O curso visa proporcionar uma formação sólida e multidisciplinar, preparando os alunos para enfrentar os desafios da indústria e da tecnologia contemporânea. Para informações mais detalhadas, é recomendável consultar o Projeto Pedagógico do Curso (PPC) disponível na instituição.",
+      "resposta_rag": "O objetivo geral do curso de graduação em Engenharia Mecatrônica da Universidade Federal de São João del-Rei é \"formar engenheiros com sólido preparo científico e tecnológico na área de Elétrica, Mecânica, Computação, Controle e Automação\". Os egressos devem ter capacidade de \"absorver e desenvolver novas tecnologias\" e atuar \"criativamente, na identificação e resolução de problemas de engenharia, considerando seus aspectos políticos, econômicos, sociais, ambientais e culturais, na perspectiva ética e humanística, visando a atendimento às demandas da sociedade.\"",
+      "fontes": [
+        "PPC_Mecatronica.pdf"
+      ],
+      "metrics_pura": {
+        "exact_match": false,
+        "semantic_similarity": 0.8390256275550454,
+        "rougeL": 0.2620689655172414,
+        "length": 70,
+        "fontes_ok": false,
+        "hallucination": false
+      },
+      "metrics_rag": {
+        "exact_match": false,
+        "semantic_similarity": 0.9222573455953443,
+        "rougeL": 0.6967741935483872,
+        "length": 78,
+        "fontes_ok": true,
+        "hallucination": false
+      }
+    },
+    {
+      "id": 204,
+      "pergunta": "Segundo o PPC, quais são os princípios curriculares básicos da formação no curso?",
+      "resposta_esperada": "Formação sólida em fundamentos científicos (física, matemática, informática); formação tecnológica em mecânica, controle e automação; formação complementar em sistemas e processos; formação metodológica em engenharia.",
+      "resposta_pura": "Os princípios curriculares básicos da formação no curso de Engenharia Mecatrônica da UFSJ incluem a articulação entre teoria e prática, a interdisciplinaridade, a formação humanística, a ética profissional e a responsabilidade social. Esses princípios visam proporcionar uma formação integral ao aluno, preparando-o para atuar de forma crítica e criativa em sua área de atuação. Para informações mais detalhadas, recomenda-se consultar o Projeto Pedagógico do Curso (PPC) disponível na instituição.",
+      "resposta_rag": "Os princípios curriculares básicos da formação no curso de Engenharia Mecatrônica são:\n\n1. Formação sólida em fundamentos científicos de física, matemática e informática.\n2. Formação sólida, conceitual e tecnológica, em mecânica, controle e automação de processos.\n3. Formação complementar em processos.\n4. Formação metodológica em engenharia. \n\nEsses princípios visam garantir uma formação multidisciplinar e abrangente para os alunos.",
+      "fontes": [
+        "PPC_Mecatronica.pdf"
+      ],
+      "metrics_pura": {
+        "exact_match": false,
+        "semantic_similarity": 0.6190987459026432,
+        "rougeL": 0.16,
+        "length": 69,
+        "fontes_ok": false,
+        "hallucination": false
+      },
+      "metrics_rag": {
+        "exact_match": false,
+        "semantic_similarity": 0.7412531846859488,
+        "rougeL": 0.6153846153846153,
+        "length": 58,
+        "fontes_ok": true,
+        "hallucination": false
+      }
+    },
+    {
+      "id": 205,
+      "pergunta": "No PPC, quais são as informações básicas de oferta e integralização (modalidade, turnos, vagas e duração)?",
+      "resposta_esperada": "Modalidade: curso noturno e integral. Turnos: o primeiro semestre é destinado ao curso noturno e o segundo semestre ao curso integral.Vagas: 50 vagas semestrais.Duração: o curso tem duração de cinco anos, modulado em semestres de dezoito semanas letivas.",
+      "resposta_pura": "No Projeto Pedagógico do Curso (PPC) de Engenharia Mecatrônica da UFSJ, as informações básicas de oferta e integralização são as seguintes:\n\n- **Modalidade**: Presencial\n- **Turnos**: Diurno\n- **Vagas**: O número de vagas pode variar a cada processo seletivo, sendo importante consultar o edital específico do vestibular ou do SiSU.\n- **Duração**: O curso tem duração prevista de 10 semestres.\n\nPara informações mais detalhadas e atualizadas, recomenda-se consultar o site oficial da UFSJ ou o próprio PPC disponível na instituição.",
+      "resposta_rag": "No PPC, as informações básicas de oferta e integralização do curso de Engenharia Mecatrônica são:\n\n- Modalidade: Curso noturno e curso integral.\n- Turnos: O primeiro semestre é destinado ao curso noturno e o segundo semestre ao curso integral.\n- Vagas: O curso oferece 50 vagas semestrais.\n- Duração: O curso tem duração de cinco anos, modulado em semestres de dezoito semanas letivas.",
+      "fontes": [
+        "PPC_Mecatronica.pdf"
+      ],
+      "metrics_pura": {
+        "exact_match": false,
+        "semantic_similarity": 0.5942917792803118,
+        "rougeL": 0.22727272727272727,
+        "length": 80,
+        "fontes_ok": false,
+        "hallucination": false
+      },
+      "metrics_rag": {
+        "exact_match": false,
+        "semantic_similarity": 0.7138927180272472,
+        "rougeL": 0.7735849056603773,
+        "length": 63,
+        "fontes_ok": true,
+        "hallucination": false
+      }
+    },
+    {
+      "id": 206,
+      "pergunta": "Quais são as matérias obrigatórias do primeiro período?",
+      "resposta_esperada": "1. Cálculo Diferencial e Integral I \n                                        2. Sistemas Digitais\n                                        3. Algoritmos e Estrutura de Dados I \n                                        4. Química Geral\n                                        5. Química Geral Experimental\n                                        6. Introdução a Engenharia Mecatrônica \n                                        7. Metodologia Científica\n                        ",
+      "resposta_pura": "No primeiro período do curso de Engenharia Mecatrônica da UFSJ, as matérias obrigatórias geralmente incluem disciplinas fundamentais como:\n\n1. Cálculo I\n2. Física I\n3. Química Geral\n4. Introdução à Engenharia\n5. Desenho Técnico\n\nÉ importante verificar a grade curricular atualizada no site da UFSJ ou consultar o coordenador do curso, pois as disciplinas podem sofrer alterações.",
+      "resposta_rag": "As matérias obrigatórias do primeiro período do curso de Engenharia Mecatrônica da UFSJ são:\n\n1. Cálculo Diferencial e Integral I (72 horas)\n2. Sistemas Digitais (72 horas)\n3. Algoritmos e Estrutura de Dados I (72 horas)\n4. Química Geral (54 horas)\n5. Química Geral Experimental (18 horas)\n6. Introdução a Engenharia Mecatrônica (36 horas)\n7. Metodologia Científica (36 horas)",
+      "fontes": [
+        "PPC_Mecatronica.pdf"
+      ],
+      "metrics_pura": {
+        "exact_match": false,
+        "semantic_similarity": 0.6554759326504036,
+        "rougeL": 0.23529411764705882,
+        "length": 57,
+        "fontes_ok": false,
+        "hallucination": false
+      },
+      "metrics_rag": {
+        "exact_match": false,
+        "semantic_similarity": 0.7447427370981757,
+        "rougeL": 0.691588785046729,
+        "length": 59,
+        "fontes_ok": true,
+        "hallucination": false
+      }
+    }
+  ],
+  "resumo_metricas": {
+    "LLM puro": {
+      "avg_similarity": 0.5962689309373753,
+      "avg_rougeL": 0.18997321738587972,
+      "exact_match_rate": 0.0,
+      "hallucination_rate": 0.18181818181818182,
+      "avg_length": 68.63636363636364,
+      "source_coverage": 0.0
+    },
+    "LLM+RAG": {
+      "avg_similarity": 0.8570453682220814,
+      "avg_rougeL": 0.7930145736968001,
+      "exact_match_rate": 0.0,
+      "hallucination_rate": 0.0,
+      "avg_length": 77.27272727272727,
+      "source_coverage": 1.0
+    }
+  }
+}
