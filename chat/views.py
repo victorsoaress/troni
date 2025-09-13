@@ -129,7 +129,6 @@ class ChatRagAPIView(APIView):
 
 
     def get_category(self, user_query, pipeline):
-        print(user_query)
         llm_client_category = LlamaOpenAI(model="gpt-4o-mini", temperature=0.5)
         
         normalized_query = normalize_text(user_query)
@@ -143,7 +142,6 @@ class ChatRagAPIView(APIView):
         categories = pipeline.process_request("", user_query, prompt, llm_client_category)
         if isinstance(categories, str):
             categories = [c.strip() for c in categories.split(",") if c.strip()]
-        print(categories)
         return categories
     
     def get_response_query(self, user_query, context, pipeline, modo):
@@ -152,7 +150,6 @@ class ChatRagAPIView(APIView):
         return response
        
     def get_rag_context(self, user_query, categories):
-        print(categories)
         query_embedding = create_embedding(user_query)
         all_hits = []
         for category in categories:
@@ -174,20 +171,17 @@ class ChatRagAPIView(APIView):
         pipeline = SecureLLMPipeline()
         user_query = request.data.get("user_query")
         modo = request.data.get("modo") 
-        print(user_query, modo)
         if not modo:
             if not user_query:
                 return Response({"error": "Campo 'user_query' é obrigatório."}, status=status.HTTP_400_BAD_REQUEST)
 
             categories = self.get_category(user_query, pipeline)
-            print(categories)
             if categories == "Não posso responder à essa questão por motivos de segurança.":
                 return Response({
                     "answer": "Não posso responder à essa questão por motivos de segurança.",
                     "sources": ""
                 }, status=status.HTTP_200_OK)
 
-            print(categories, user_query)
             context, sources = self.get_rag_context(user_query, categories)
 
             response = self.get_response_query(user_query, context, pipeline, False)
