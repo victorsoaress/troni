@@ -71,7 +71,7 @@ class SecureLLMPipeline:
             ChatMessage(role="assistant", content=f"CONTEXT_START\n{(context or '').strip()}\nCONTEXT_END"),
             ChatMessage(role="user", content=clean_user_query.strip()),
         ]
-
+        print(messages)
         resp = llm_client.chat(messages)
         answer = (getattr(resp, "message", None).content or "").strip()
         return self.output_validator.filter_response(answer)
