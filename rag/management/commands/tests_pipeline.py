@@ -164,11 +164,11 @@ class Command(BaseCommand):
                 esperado = q["resposta_esperada"]
 
                 # --- 1. LLM puro ---
-                r_puro = requests.post(API_URL, json={"user_query": pergunta, "modo": True})
+                r_puro = requests.post(API_URL, json={"user_query": pergunta, "llm_puro": True})
                 resposta_pura = r_puro.json().get("answer", "")
 
                 # --- 2. LLM com RAG ---
-                r_rag = requests.post(API_URL, json={"user_query": pergunta, "modo": False})
+                r_rag = requests.post(API_URL, json={"user_query": pergunta, "llm_puro": False})
                 resposta_rag = r_rag.json().get("answer", "")
                 fontes = r_rag.json().get("sources", [])
 
