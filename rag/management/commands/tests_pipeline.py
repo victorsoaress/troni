@@ -12,9 +12,6 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         PERGUNTAS_TESTE = [
-            # ========================
-            # 5 perguntas de tópicos variados (IDs 101-105)
-            # ========================
             {
                 "id": 101,
                 "categoria": "premios",
@@ -48,10 +45,6 @@ class Command(BaseCommand):
                 "pergunta": "Quais são os passos principais para solicitar a contagem de horas de Atividades Complementares?",
                 "resposta_esperada": "Os passos para solicitar a contagem de horas complementares são: Preencher o formulário online disponível na aba Requerimento Eletrônico; Preencher e assinar o formulário de Atividades Complementares: AC-01. Anexar o formulário AC-01 e comprovantes das atividades por meio do envio de arquivo único em PDF** | Crie um arquivo único em PDF que contenha o formulário AC-01 e os comprovantes das atividades, na sequência em que foram listados no formulário. Envie esse arquivo único para que as atividades sejam validadas no sistema. **AS ATIVIDADES SERÃO VALIDADAS NO SISTEMA SOMENTE APÓS REALIZAÇÃO DOS PROCEDIMENTOS DESCRITOS"
             },
-
-            # ========================
-            # 5 perguntas exclusivas dos PDFs (IDs 201-205)
-            # ========================
             {
                 "id": 201,
                 "categoria": "colegiado",
@@ -104,9 +97,6 @@ class Command(BaseCommand):
 
         API_URL = "http://127.0.0.1:8000/api/chat/rag"
 
-        # ========================
-        # Funções de Métricas
-        # ========================
 
         def cosine_similarity(v1, v2):
             """Cálculo da similaridade coseno"""
@@ -134,12 +124,10 @@ class Command(BaseCommand):
                 }
 
 
-            # Similaridade semântica
             emb_modelo = create_embedding(resposta_modelo)
             emb_esperada = create_embedding(resposta_esperada)
             similarity = cosine_similarity(emb_modelo, emb_esperada)
 
-            # ROUGE-L
             scorer = rouge_scorer.RougeScorer(["rougeL"], use_stemmer=True)
             rougeL = scorer.score(resposta_esperada, resposta_modelo)["rougeL"].fmeasure
 
@@ -151,10 +139,6 @@ class Command(BaseCommand):
                 "hallucination": similarity < 0.3
             }
 
-        # ========================
-        # Avaliação
-        # ========================
-
         def avaliar():
             resultados = []
             stats = {"puro": [], "rag": []}
@@ -163,16 +147,13 @@ class Command(BaseCommand):
                 pergunta = q["pergunta"]
                 esperado = q["resposta_esperada"]
 
-                # --- 1. LLM puro ---
                 r_puro = requests.post(API_URL, json={"user_query": pergunta, "llm_puro": True})
                 resposta_pura = r_puro.json().get("answer", "")
 
-                # --- 2. LLM com RAG ---
                 r_rag = requests.post(API_URL, json={"user_query": pergunta, "llm_puro": False})
                 resposta_rag = r_rag.json().get("answer", "")
                 fontes = r_rag.json().get("sources", [])
 
-                # --- Métricas ---
                 metrics_pura = avaliar_resposta(resposta_pura, esperado)
                 metrics_rag = avaliar_resposta(resposta_rag, esperado, fontes)
 
@@ -190,9 +171,6 @@ class Command(BaseCommand):
                     "metrics_rag": metrics_rag
                 })
 
-            # ========================
-            # Agregação das métricas
-            # ========================
             def aggregate(metrics_list):
                 return {
                     "avg_similarity": np.mean([m["semantic_similarity"] for m in metrics_list]),
@@ -208,7 +186,6 @@ class Command(BaseCommand):
                 "LLM+RAG": aggregate(stats["rag"])
             }
 
-            # Salvar tudo em um único JSON
             output = {
                 "resultados_detalhados": resultados,
                 "resumo_metricas": resumo
