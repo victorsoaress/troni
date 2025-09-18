@@ -170,8 +170,8 @@ class ChatRagAPIView(APIView):
     def post(self, request):
         pipeline = SecureLLMPipeline()
         user_query = request.data.get("user_query")
-        modo = request.data.get("modo") 
-        if not modo:
+        llm_puro = request.data.get("llm_puro") 
+        if not llm_puro:
             if not user_query:
                 return Response({"error": "Campo 'user_query' é obrigatório."}, status=status.HTTP_400_BAD_REQUEST)
 
