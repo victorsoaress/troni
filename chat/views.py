@@ -111,7 +111,7 @@ qdrant = QdrantSingleton()
 
 class ChatRagAPIView(APIView):
     """
-    API para o chatbot RAG do curso de Mecatrônica UFSJ
+    API para o chatbot RAG
     """
     def normalize_text(self, text: str) -> str:
         text = unicodedata.normalize("NFKD", text)
