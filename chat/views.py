@@ -188,12 +188,13 @@ class ChatRagAPIView(APIView):
             if response == "Não posso responder à essa questão por motivos de segurança.":
                 return Response({
                     "answer": "Não posso responder à essa questão por motivos de segurança.",
-                    "sources": ""
+                    "sources": "",
                 }, status=status.HTTP_200_OK)  
-            
+            print(context)
             return Response({
                 "answer": response,
-                "sources": list(set(sources))
+                "sources": list(set(sources)),
+                "context": context
             }, status=status.HTTP_200_OK)
         else:
             response = self.get_response_query(user_query,'', pipeline, True)

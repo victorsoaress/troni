@@ -138,6 +138,17 @@ class Command(BaseCommand):
                 "fontes_ok": bool(fontes),
                 "hallucination": similarity < 0.3
             }
+        def estimar_tokens(texto: str) -> int:
+            return int(len(texto.split()) / 0.75)
+
+        def calcular_custo_input(prompt_tokens):
+            """
+            Calcula custo em USD baseado no modelo gpt-4o-mini:
+              - input: $0.15 / 1M tokens
+            """
+            return (prompt_tokens / 1_000_000 * 0.15)
+
+        
 
         def avaliar():
             resultados = []
@@ -149,10 +160,21 @@ class Command(BaseCommand):
 
                 r_puro = requests.post(API_URL, json={"user_query": pergunta, "llm_puro": True})
                 resposta_pura = r_puro.json().get("answer", "")
+                tokens_puro = estimar_tokens(pergunta)
+                custo_llm_puro = calcular_custo_input(tokens_puro)
 
                 r_rag = requests.post(API_URL, json={"user_query": pergunta, "llm_puro": False})
                 resposta_rag = r_rag.json().get("answer", "")
                 fontes = r_rag.json().get("sources", [])
+                contexto = ""
+                ctx = r_rag.json().get("context", [])
+                if isinstance(ctx, list):
+                    contexto = " ".join(ctx)
+                elif isinstance(ctx, str):
+                    contexto = ctx
+                tokens_rag = estimar_tokens(pergunta+" "+contexto)
+                custo_rag = calcular_custo_input(tokens_rag)
+                print(custo_rag)
 
                 metrics_pura = avaliar_resposta(resposta_pura, esperado)
                 metrics_rag = avaliar_resposta(resposta_rag, esperado, fontes)
@@ -168,16 +190,16 @@ class Command(BaseCommand):
                     "resposta_rag": resposta_rag,
                     "fontes": fontes,
                     "metrics_pura": metrics_pura,
-                    "metrics_rag": metrics_rag
+                    "metrics_rag": metrics_rag,
+                    "tokens_puro": custo_llm_puro,
+                    "tokens_rag": custo_rag,
                 })
 
             def aggregate(metrics_list):
                 return {
                     "avg_similarity": np.mean([m["semantic_similarity"] for m in metrics_list]),
                     "avg_rougeL": np.mean([m["rougeL"] for m in metrics_list]),
-                    "exact_match_rate": np.mean([m["exact_match"] for m in metrics_list]),
                     "hallucination_rate": np.mean([m["hallucination"] for m in metrics_list]),
-                    "avg_length": np.mean([m["length"] for m in metrics_list]),
                     "source_coverage": np.mean([m["fontes_ok"] for m in metrics_list]),
                 }
 
