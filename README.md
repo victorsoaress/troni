@@ -99,7 +99,7 @@ Métricas de avaliação → (tests_pipeline.py) validam a qualidade do sistema.
 --
 🛠️ Instalação
 Clonar o Repositório
-<pre>git clone https://github.com/seu-usuario/troni-rag.git
+<pre>git clone https://github.com/victorsoaress/troni.git
 cd troni-rag</pre>
 
 Criar ambiente virtual
